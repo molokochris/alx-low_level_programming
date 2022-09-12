@@ -4,7 +4,7 @@
  * main - main block
  * Return:0
  */
-int main (void)
+int main(void)
 {
 	char alpha[56] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 	int i = 0;
