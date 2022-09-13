@@ -1,19 +1,14 @@
-#include <stdio.h>
+#include "main.h"
+#include <unistd.h>
 
 /**
- * main - main block
- * _putchar - prints putchar
+ * main - putchar putchar
+ * write prints out putchar one character at a time
+ *
  * Return:0
  */
-int _putchar(void)
+int _putchar(char c)
 {
-	char chars = "_putchar";
-	int i = 0;
-		while (chars[i] != '\0')
-		{
-			putchar(chars[i]);
-			i++;
-		}
-	putchar('\n');
+	return (write(1, "_putchar\n", 9));
 return (0);
 }
