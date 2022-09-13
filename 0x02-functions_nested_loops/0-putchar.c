@@ -1,14 +1,20 @@
 #include "main.h"
-#include <unistd.h>
+#include <string.h>
 
 /**
  * main - putchar putchar
- * write prints out putchar one character at a time
+ * This program prints out _putchar
  *
  * Return:0
  */
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, "_putchar\n", 9));
+	char str[9] = "_putchar\n";
+	int i = 0;
+		while (str[i] != '\0')
+		{
+			_putchar(str[i]);
+		}
+		_putchar('\n');
 return (0);
 }
