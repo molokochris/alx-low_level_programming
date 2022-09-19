@@ -6,10 +6,11 @@
  */
 void _puts(char *str)
 {
-	char res[];
+	int sz = _strlen(str);
+	char res[sz];
 	int i = 0;
 
-		while (*(str + i) != '\0')
+		while (i < sz)
 		{
 			res[i] = *(str + i);
 			i++;
