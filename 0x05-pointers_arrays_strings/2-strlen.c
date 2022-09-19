@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * _strlen - takes in a pointer to first char of s, find out its length(whole string)
- * @s: the string
+ * _strlen - takes in a pointer to first char of s, find out its length
+ * @s: the string we're calculating length of
+ * Return:0 return the length of the string
  */
 int _strlen(char *s)
 {
