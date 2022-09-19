@@ -10,10 +10,9 @@ void _puts(char *str)
 	char res[sz];
 	int i = 0;
 
-		while (i < sz)
+		while (*(str + i) != '\0')
 		{
-			res[i] = *(str + i);
+			_putchar(*(str + i));
 			i++;
 		}
-		printf("%s", res);
 }
