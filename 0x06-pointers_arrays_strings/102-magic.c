@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/*
- * main - main block code being chaged
- *
- * Return:0
- */
 int main(void)
 {
 	int n;
