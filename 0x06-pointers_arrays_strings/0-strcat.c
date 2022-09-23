@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * * _strcat - concatenates two strings
- * * @dest: input parameter string
- * * @src: input parameter string
- * *
- * * Return: dest
+ * _strcat - concatenates two strings
+ * @dest: input parameter string
+ * @src: input parameter string
+ *
+ * Return: dest
  * */
 char *_strcat(char *dest, char *src)
 {
@@ -18,9 +18,9 @@ char *_strcat(char *dest, char *src)
 		{
 			a++;
 		}
-	
+
 		b = 0;
-		
+
 		while (src[b] != 0)
 		{
 			dest[a] = src[b];
