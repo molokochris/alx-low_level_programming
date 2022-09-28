@@ -1,33 +1,23 @@
-#include <strdio.h>
 /**
- * _strspn - finds length of prefix substring
- *
+ * _strspn - gets lengthof a prefix substring
  * @s: string to check
- * @accept: substring of chars
+ * @accept: string to check against
  *
- * Return: n bytes in intial segment of s which
- * consist only of bytes from accept
+ * Return: number of bytes of s in accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
-	int consistC = 0;
-	int prevC;
+	unsigned int i, j;
 
-	while (*s)
+	for (i = 0; s[i]; i++)
 	{
-		i = 0;
-		prevC = consistC;
-
-		while (*(accept + i) != '\0')
+		for (j = 0; accept[j]; j++)
 		{
-			if (*(accept + i) == *s)
-				consistC++;
-			i++;
+			if (s[i] == accept[j])
+				break;
 		}
-		if (prevC == consistC)
+		if (!accept[j])
 			break;
-		s++;
 	}
-	return (consistC);
+	return (i);
 }
