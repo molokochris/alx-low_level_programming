@@ -7,13 +7,13 @@
  * @argv: the value of the arguments
  * Return:0
  */
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	while (argv[0][i] != '\0')
+	while (argv[argc - 1][i] != '\0')
 	{
-		putchar(argv[0][i]);
+		putchar(argv[argc - 1][i]);
 		i++;
 	}
 	putchar('\n');
