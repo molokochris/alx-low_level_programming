@@ -9,7 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int prod = atoi(argv[1]) * atoi(argv[2]);
+	int a = atoi(argv[1]);
+	int b = atoi(argv[2]);
+	int prod = a * b;
 
 	if (argc != 3)
 	{
