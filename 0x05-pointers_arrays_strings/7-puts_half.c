@@ -19,8 +19,8 @@ void puts_half(char *str)
 
 		while (count < i)
 		{
-			putchar(*(str + count));
 			count++;
+			putchar(*(str + count));
 		}
 	}
 	else
