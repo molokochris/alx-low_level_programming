@@ -21,8 +21,8 @@ void puts_half(char *str)
 
 		while (*(str + i))
 		{
-			putchar(*(str + i));
 			i++;
+			putchar(*(str + i));
 		}
 	}
 	else
@@ -31,8 +31,8 @@ void puts_half(char *str)
 
 		while (*(str + i))
 		{
-			putchar(*(str + i));
 			i++;
+			putchar(*(str + i));
 		}
 	}
 	putchar('\n');
