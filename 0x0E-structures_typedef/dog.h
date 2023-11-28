@@ -1,10 +1,14 @@
 #ifndef DOG_H
 #define DOG_H
 
-/*
- * Definition of the dog structure
+/**
+ * struct dog - Definition of the dog structure
  * The structure represents information about the dog,
- * which is the name, age, and owner
+ * @name: is the name of the dog
+ * @age: is the age of the dog
+ * @owner: is the name of the dog owner
+ *
+ * Description - This structure contains details about a dog,
  */
 
 struct dog
@@ -13,5 +17,9 @@ struct dog
 	float age;
 	char *owner;
 };
+
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif /* DOG_H */
